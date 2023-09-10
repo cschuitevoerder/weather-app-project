@@ -1,0 +1,68 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 60px;
+  padding: 40px 2px;
+  background-color: #010101;
+  color: whitesmoke;
+  border: 2px solid gray;
+}
+h1 {
+  display: inline;
+}
+form {
+  margin-left: 0;
+}
+img {
+  width: 125px;
+}
+i {
+  color: gray;
+}
+.icon {
+  font-size: 30px;
+}
+
+.card {
+  text-align: center;
+  border: none;
+}
+.card-title {
+  font-size: 20px;
+}
+.cardTonight {
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  transition: all 2s ease-in-out;
+}
+.cardTonight:hover {
+  color: white;
+}
+.cardTomorrow {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+}
+.degree {
+  background-color: #acd7ff;
+}
+.nextWeek {
+  position: relative;
+  top: -50px;
+}
+.todayDegree {
+  font-size: 30px;
+}
+.todayDetail {
+  font-size: 20px;
+  position: relative;
+  top: -40px;
+  left: 20px;
+}
+.todayIcon {
+  font-size: 80px;
+  transition: all 2s ease-in-out;
+}
+.todayIcon:hover {
+  color: whitesmoke;
+}
