@@ -4,10 +4,12 @@ body {
   padding: 40px 2px;
   background-color: #010101;
   color: whitesmoke;
-  border: 2px solid gray;
 }
 h1 {
   display: inline;
+}
+h2 {
+  text-transform: capitalize;
 }
 form {
   margin-left: 0;
@@ -17,6 +19,13 @@ img {
 }
 i {
   color: gray;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid white;
+  padding: 20px;
 }
 .icon {
   font-size: 30px;
@@ -65,4 +74,19 @@ i {
 }
 .todayIcon:hover {
   color: whitesmoke;
+}
+
+.active {
+  color: white;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.todayDegree {
+  text-align: center;
+  font-size: 14px;
 }

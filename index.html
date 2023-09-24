@@ -25,113 +25,54 @@
     <div class="container-sm">
       <div class="weather-app">
         <form id="enter-location">
-          <div class="row g-3 align-items-left">
-            <div class="col-auto">
+          <div class="row">
+            <div class="col-9">
               <input
                 type="text"
                 placeholder="city"
                 autofocus
                 class="form-control"
-                id="enter-postcode"
+                id="enter-city"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="search"
+                class="btn btn-primary w-100"
               />
             </div>
           </div>
         </form>
 
-        <h1></h1>
-        <h3>Evening</h3>
-        <br />
+        <h1>""</h1>
         <div class="row todayTemp">
-          <div class="col">
-            <br />
-            <h2>
-              <div class="todayDate" id="date">""</div>
-            </h2>
+          <br />
+          <div class="col-6">
+            <span>last updated: </span>
+            <span class="todayDate" id="date">""</span>
+            <span>GMT</span>
+
+            <div class="todayDescription" id="description">""</div>
+            <span>Humidity: </span>
+            <span class="todayHumidity" id="humidity">""</span>
+            <span>%</span>
+          </br>
+          <span>Wind Speed:</span>
+            <span class="windSpeed" id="windSpeed">""</span>
+          </div>
+          <div class="col-6">
             <div class="todayDegree">
               <span id="today-tempreture"></span>
-              <span> <a href="#" id="celcius"> C </a></span>
+              <span> <a href="#" id="celsius" class="active"> C </a></span>
               |
               <span>
                 <a href="#" id="farenheight"> F </a>
               </span>
-            </div>
-          </div>
 
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">6pm</h5>
-                <i class="fa-solid fa-cloud icon"></i>
+              <div>
+                <img src="" alt="" id="icon" class="icon" />
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">14°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">7pm</h5>
-                <i class="fa-solid fa-cloud icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">13°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">8pm</h5>
-                <i class="fa-solid fa-cloud-moon icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">12°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">9pm</h5>
-                <i class="fa-solid fa-cloud-moon icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">10°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">10pm</h5>
-                <i class="fa-solid fa-cloud-moon icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">10°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">11pm</h5>
-                <i class="fa-solid fa-cloud-moon icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">8°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTonight">
-              <div class="card-body">
-                <h5 class="card-title">12pm</h5>
-                <i class="fa-solid fa-cloud-moon icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item degree">8°C</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -197,18 +138,22 @@
               </ul>
             </div>
           </div>
+          <div>
+            <br />
+            <p>
+              <a
+                href="https://github.com/cschuitevoerder/weather-app-project/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open source code</a
+              >
+              by Chloe Schuitevoerder
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <p>
-      <a
-        href="https://github.com/cschuitevoerder/weather-app-project/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Open source code</a
-      >
-      by Chloe Schuitevoerder
-    </p>
+
     <script src="index.js"></script>
   </body>
 </html>
