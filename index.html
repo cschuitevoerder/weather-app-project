@@ -29,7 +29,7 @@
             <div class="col-9">
               <input
                 type="text"
-                placeholder="city"
+                placeholder="Enter City"
                 autofocus
                 class="form-control"
                 id="enter-city"
@@ -48,22 +48,24 @@
         <h1>""</h1>
         <div class="row todayTemp">
           <br />
-          <div class="col-6">
-            <span>last updated: </span>
+          <div class="col-9">
+            <span>Last updated: </span>
             <span class="todayDate" id="date">""</span>
-            <span>GMT</span>
+            <span>(GMT)</span>
 
             <div class="todayDescription" id="description">""</div>
             <span>Humidity: </span>
             <span class="todayHumidity" id="humidity">""</span>
             <span>%</span>
-          </br>
-          <span>Wind Speed:</span>
+            <br />
+            <span>Wind Speed:</span>
             <span class="windSpeed" id="windSpeed">""</span>
+            <span>mph</span>
           </div>
-          <div class="col-6">
+          <div class="col-3">
             <div class="todayDegree">
-              <span id="today-tempreture"></span>
+              <span class="todayTempreture" id="today-tempreture"></span>
+              <span>°</span>
               <span> <a href="#" id="celsius" class="active"> C </a></span>
               |
               <span>
@@ -76,81 +78,19 @@
             </div>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
 
-        <div class="row nextWeek">
-          <div class="col"></div>
-          <div class="col">
-            <div class="card cardTomorrow">
-              <div class="card-body">
-                <h5 class="card-title">20th Feb</h5>
-                <i class="fa-solid fa-cloud-sun icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">22°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTomorrow">
-              <div class="card-body">
-                <h5 class="card-title">21st Feb</h5>
-                <i class="fa-regular fa-sun icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">22°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTomorrow">
-              <div class="card-body">
-                <h5 class="card-title">22nd Feb</h5>
-                <i class="fa-solid fa-cloud icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">22°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTomorrow">
-              <div class="card-body">
-                <h5 class="card-title">23rd Feb</h5>
-                <i class="fa-solid fa-cloud-sun icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">22°C</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card cardTomorrow">
-              <div class="card-body">
-                <h5 class="card-title">24th Feb</h5>
-                <i class="fa-solid fa-cloud-sun icon"></i>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">22°C</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <br />
-            <p>
-              <a
-                href="https://github.com/cschuitevoerder/weather-app-project/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Open source code</a
-              >
-              by Chloe Schuitevoerder
-            </p>
-          </div>
-        </div>
+        <div class="weather-forecast" id="weather-forecast"></div>
+      </div>
+      <div class="open-source">
+        <p>
+          <a
+            href="https://github.com/cschuitevoerder/weather-app-project/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open source code</a
+          >
+          by Chloe Schuitevoerder
+        </p>
       </div>
     </div>
 

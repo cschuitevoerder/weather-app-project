@@ -1,92 +1,54 @@
 body {
   font-family: "Quicksand", sans-serif;
-  margin: 60px;
-  padding: 40px 2px;
-  background-color: #010101;
-  color: whitesmoke;
-}
-h1 {
-  display: inline;
-}
-h2 {
+  padding: 40px;
+  background-color: white;
+  color: black;
   text-transform: capitalize;
 }
-form {
-  margin-left: 0;
-}
-img {
-  width: 125px;
-}
-i {
-  color: gray;
-}
-
 .weather-app {
-  max-width: 600px;
-  margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid gray;
   padding: 20px;
+  max-width: fit-content;
+  min-width: fit-content;
 }
 .icon {
-  font-size: 30px;
-}
-
-.card {
   text-align: center;
-  border: none;
-}
-.card-title {
-  font-size: 20px;
-}
-.cardTonight {
-  background: linear-gradient(to top, #09203f 0%, #537895 100%);
-  transition: all 2s ease-in-out;
-}
-.cardTonight:hover {
-  color: white;
-}
-.cardTomorrow {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 200, 124) 0%,
-    rgb(252, 251, 121) 90%
-  );
-}
-.degree {
-  background-color: #acd7ff;
-}
-.nextWeek {
-  position: relative;
-  top: -50px;
-}
-.todayDegree {
-  font-size: 30px;
-}
-.todayDetail {
-  font-size: 20px;
-  position: relative;
-  top: -40px;
-  left: 20px;
-}
-.todayIcon {
-  font-size: 80px;
-  transition: all 2s ease-in-out;
-}
-.todayIcon:hover {
-  color: whitesmoke;
+  width: 90px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 13px;
+}
+.weather-forecast-tempreture {
+  font-size: 13px;
+}
+.open-source {
+  text-align: left;
+  margin-left: 90px;
+}
+.forecastIcon {
+  width: 60px;
+}
 .active {
-  color: white;
   cursor: default;
+  color: black;
   text-decoration: none;
 }
 
 .active:hover {
   text-decoration: none;
 }
-
 .todayDegree {
+  font-weight: bold;
   text-align: center;
-  font-size: 14px;
+}
+.weather-forecast-tempreture-max {
+  font-weight: bold;
+}
+form {
+  margin: 10px 0px;
 }
